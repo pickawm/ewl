@@ -47,6 +47,9 @@ function makeCard(obj) {
     if(imgSrc) {
         card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
+
+    // the code below builds out the entire <p> for card-text. removing it allows for browse to only contain images.
+    
    // card += '<p class="card-text">';
    // {% for f in fields %}{% unless f.hidden == 'true' %}
    // if(obj[{{ f.field | jsonify }}]){
