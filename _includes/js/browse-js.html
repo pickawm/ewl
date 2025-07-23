@@ -47,6 +47,7 @@ function makeCard(obj) {
     if(imgSrc) {
         card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
+    card += "</div>"
     // send back big string
     return card;
 }
