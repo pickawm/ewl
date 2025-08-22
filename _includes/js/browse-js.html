@@ -81,7 +81,7 @@ function filterItems(arr,q) {
     for (var i = 0, len = filteredItems.length; i < len; i++) {
         cards += makeCard(filteredItems[i]);
     }
-    browseItemsDiv.innerHTML = cards;
+    browseItemsDiv.innerHTML = cards + " <p> Testing </p>";
 
     // finish
     if (q != "") {
@@ -152,6 +152,7 @@ window.addEventListener("hashchange", function() {
         filterItems(items,query);
     }
 });
+
 
 /* item array sorting function */
 function sorting(json_object, key_to_sort_by) {
