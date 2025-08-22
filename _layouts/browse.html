@@ -18,7 +18,10 @@ custom-foot: js/browse-js.html
         <div class="h2" id="numberOf"></div>
     </div>
     <div class="col-md-2">
-        <div class="dropdown">
+        <div class ="button">
+            <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
+        </div>
+       /* <div class="dropdown">
             <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sort by <span id="sortFilter">Random</span>
             </button>
@@ -29,7 +32,8 @@ custom-foot: js/browse-js.html
                 {% for o in sort_options %}
                 <button class="dropdown-item browse-sort-item" data-filter="{{ o.field | escape }}">{{ o.sort_name }}</button>
                 {% endfor %}
-            </div>
+            </div> */
+
         </div>
     </div>
 </div>
